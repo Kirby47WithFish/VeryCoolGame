@@ -12,17 +12,50 @@ Quiz Show
 }
 
 
-:: Game Start {"position":"875,350","size":"100,100"}
+:: Center {"position":"475,750","size":"100,100"}
+
+
+
+:: Economics {"position":"850,600","size":"100,100"}
+
+
+
+:: Game Start {"position":"875,300","size":"100,100"}
 ''WELCOME TO THE GAME SHOW LADIES AN GENTLEMEN!!! ''
 You will have 3 different news articles with three different perspectives each. Your job is to guess which perspective is more left leaning, right leaning or center.
 
 [[Science]]
 [[Sports]]
+[[Economics]]
 
 
-:: Science {"position":"650,550","size":"100,100"}
+:: Left Leaning {"position":"775,800","size":"100,100"}
 
 
 
-:: Sports {"position":"1075,550","size":"100,100"}
+:: Right Leaning {"position":"625,775","size":"100,100"}
+
+
+
+:: Science {"position":"650,600","size":"100,100"}
+NASA's Artemis follow-up mission 'right around the corner' after successful lunar flight
+
+
+"The world may still be captivated by the breathtaking views, record-setting distance and emotional homecoming of Artemis II, but for NASA, the next chapter is already in motion."
+
+
+Elon Musk’s Starship and Jeff Bezos’ Blue Moon landers are both competing to prove their company’s lander will be ready first.
+
+The billionaires are also vying for the opportunity to carry Artemis IV astronauts during the first planned moon landing of the program in 2028".
+
+
+[[Right Leaning]]
+
+[[Left Leaning]]
+
+[[Center]]
+
+
+
+:: Sports {"position":"1100,600","size":"100,100"}
 
