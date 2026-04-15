@@ -7,10 +7,22 @@ Quiz Show
   "ifid": "6CE6D0D4-9067-4347-9CED-8199A466C549",
   "format": "Harlowe",
   "format-version": "3.3.9",
-  "start": "Untitled Passage",
+  "start": "Game Start",
   "zoom": 1
 }
 
 
-:: Untitled Passage {"position":"875,350","size":"100,100"}
+:: Game Start {"position":"875,350","size":"100,100"}
+''WELCOME TO THE GAME SHOW LADIES AN GENTLEMEN!!! ''
+You will have 3 different news articles with three different perspectives each. Your job is to guess which perspective is more left leaning, right leaning or center.
+
+[[Science]]
+[[Sports]]
+
+
+:: Science {"position":"650,550","size":"100,100"}
+
+
+
+:: Sports {"position":"1075,550","size":"100,100"}
 
