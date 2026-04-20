@@ -8,45 +8,103 @@ Quiz Show
   "format": "Harlowe",
   "format-version": "3.3.9",
   "start": "Game Start",
-  "zoom": 1
+  "zoom": 0.6
 }
 
 
-:: Center {"position":"475,750","size":"100,100"}
+:: CENTER {"position":"900,700","size":"100,100"}
+Correct! This article is from USAToday, which is considered a moderate website. 
+
+The Reason why the article is Centered is due to the focus on the facts. They only stated what was known at the time, and Russini's resignation letter. The exerpt was to show thhat point.
+
+https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/
 
 
 
-:: Economics {"position":"850,600","size":"100,100"}
+:: Center {"position":"500,600","size":"100,100"}
 
 
 
-:: Game Start {"position":"875,300","size":"100,100"}
-''WELCOME TO THE GAME SHOW LADIES AN GENTLEMEN!!! ''
-You will have 3 different news articles with three different perspectives each. Your job is to guess which perspective is more left leaning, right leaning or center.
-
+:: Choose {"position":"900,300","size":"100,100"}
 [[Science]]
 [[Sports]]
 [[Economics]]
 
-
-:: Left Leaning {"position":"775,800","size":"100,100"}
-
+(set: $points to 0)
 
 
-:: Right Leaning {"position":"625,775","size":"100,100"}
+:: Economics {"position":"1200,400","size":"100,100"}
+''Here is a quick blurb from an article:''
+How a shoe brand’s decision to ditch sneakers and become an AI firm saw stocks surging 500%
+
+'The company’s transformation centres on entering the rapidly expanding AI infrastructure market. It has secured a $50 million convertible financing arrangement with an institutional investor, with funds earmarked for acquiring graphics processing units (GPUs) — critical hardware used in training and deploying AI models."
+
+"The pivot follows a broader restructuring effort. Allbirds recently agreed to sell its brand, intellectual property, and footwear assets to American Exchange Group for approximately $39 million."
+
+''This article is''
+[[left Leaning]]
+[[right Leaning]]
+[[center]]
+
+
+:: Game Start {"position":"900,100","size":"100,100"}
+''WELCOME TO THE GAME SHOW LADIES AN GENTLEMEN!!! ''
+You will have 3 different news articles with three different perspectives each. Your job is to guess which perspective is more left leaning, right leaning or center.
+
+[[Choose]]
+
+
+:: LEFT {"position":"800,700","size":"100,100"}
+Incorrect! The Correct Answer is is Centered.
+
+This article is from USAToday, which is considered a moderate website. 
+
+The Reason why the article is Centered is due to the focus on the facts. They only stated what was known at the time, and Russini's resignation letter. The exerpt was to show that point.
+
+https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/
+
+
+:: Left Leaning {"position":"400,500","size":"100,100"}
 
 
 
-:: Science {"position":"650,600","size":"100,100"}
+:: RIGHT {"position":"1000,700","size":"100,100"}
+Incorrect! The Correct Answer is is Centered.
+
+This article is from USAToday, which is considered a moderate website. 
+
+The Reason why the article is Centered is due to the focus on the facts. They only stated what was known at the time, and Russini's resignation letter. The exerpt was to show that point.
+
+https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/
+
+
+:: Right Leaning {"position":"600,600","size":"100,100"}
+Yes the news source this article was from is from Fox news which is a right leaning news souirce. 
+
+You can Identify that this is right leaning because of very specific sentences in the article.
+
+//"Elon Musk’s Starship and Jeff Bezos’ Blue Moon landers are both competing to prove their company’s lander will be ready first."
+
+"The billionaires are also vying for the opportunity to carry Artemis IV astronauts during the first planned moon landing of the program in 2028."//
+
+Right leaning news typically focuses on the business aspect of and event. While left leaning and center news don't focus on that typically.
+
+[[Choose]]
+
+(set: $points to $points+)
+
+
+
+:: Science {"position":"600,400","size":"100,100"}
 NASA's Artemis follow-up mission 'right around the corner' after successful lunar flight
 
 
 "The world may still be captivated by the breathtaking views, record-setting distance and emotional homecoming of Artemis II, but for NASA, the next chapter is already in motion."
 
 
-Elon Musk’s Starship and Jeff Bezos’ Blue Moon landers are both competing to prove their company’s lander will be ready first.
+"Elon Musk’s Starship and Jeff Bezos’ Blue Moon landers are both competing to prove their company’s lander will be ready first."
 
-The billionaires are also vying for the opportunity to carry Artemis IV astronauts during the first planned moon landing of the program in 2028".
+The billionaires are also vying for the opportunity to carry Artemis IV astronauts during the first planned moon landing of the program in 2028."
 
 
 [[Right Leaning]]
@@ -57,5 +115,29 @@ The billionaires are also vying for the opportunity to carry Artemis IV astronau
 
 
 
-:: Sports {"position":"1100,600","size":"100,100"}
+
+:: Sports {"position":"900,500","size":"100,100"}
+This is the article: 
+
+"Dianna Russini resigns from The Athletic with defiant letter after Mike Vrabel photos"
+
+Exert from Article: 
+
+"The New York Times, which owns The Athletic, confirmed Saturday that Russini's conduct was being investigated, saying, "The Athletic’s editorial guidelines require that their journalists avoid any activities that pose a conflict of interest or the appearance of a conflict, so as not to call into question their credibility.""
+
+[[LEFT Leaning->LEFT]]
+[[CENTER Leaning->CENTER]]
+[[RIGHT Leaning->RIGHT]]
+
+
+
+:: center {"position":"1300,600","size":"100,100"}
+
+
+
+:: left Leaning {"position":"1200,600","size":"100,100"}
+
+
+
+:: right Leaning {"position":"1400,500","size":"100,100"}
 
