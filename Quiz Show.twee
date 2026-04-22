@@ -8,29 +8,42 @@ Quiz Show
   "format": "Harlowe",
   "format-version": "3.3.9",
   "start": "Game Start",
-  "zoom": 0.6
+  "zoom": 1
 }
 
 
+:: \ Results {"position":"900,900","size":"100,100"}
+You got $points out of 3 Correct!!!!
+
+
 :: CENTER {"position":"900,700","size":"100,100"}
-Correct! This article is from USAToday, which is considered a moderate website. 
+Correct! This article is from (link: "USA Today")[(goto-url: 'https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/')], which is considered a moderate website. 
 
 The Reason why the article is Centered is due to the focus on the facts. They only stated what was known at the time, and Russini's resignation letter. The exerpt was to show thhat point.
 
-https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/
 
+[[Go back and choose another category|Choose]]
+
+(set: $points to it +1)
 
 
 :: Center {"position":"500,600","size":"100,100"}
+Incorrect. This article is from (link: "Fox News")[(goto-url: 'https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight')] which is considered more right leaning. Centered news sources focuses on just the facts and has more details about the people involded in the event. They add no opinions or bias that could fit with the specific political perspective.
 
+This acticle though focuses on how this would impact businesses like Space X. Which may be true that theres to much speculation that makes it not very centered;.
+
+[[Go back and choose another category|Choose]]
 
 
 :: Choose {"position":"900,300","size":"100,100"}
+
+Please choose one of the available Catagories: 
+
 [[Science]]
 [[Sports]]
 [[Economics]]
 
-(set: $points to 0)
+[[Let's see how well you did| Results]]
 
 
 :: Economics {"position":"1200,400","size":"100,100"}
@@ -49,37 +62,50 @@ How a shoe brand’s decision to ditch sneakers and become an AI firm saw stocks
 
 :: Game Start {"position":"900,100","size":"100,100"}
 ''WELCOME TO THE GAME SHOW LADIES AN GENTLEMEN!!! ''
-You will have 3 different news articles with three different perspectives each. Your job is to guess which perspective is more left leaning, right leaning or center.
+You will have 3 different news articles.. Your job is to guess which news source is left leaning, right leaning or center.
 
-[[Choose]]
+EACH POINT YOU GET RIGHT YOU WILL BE AWARED ONE POINT. GOOD LUCK!!!!!
+
+[[Click to continue and pick a category|Choose]]
+
+(set: $points to 0)
 
 
 :: LEFT {"position":"800,700","size":"100,100"}
 Incorrect! The Correct Answer is is Centered.
 
-This article is from USAToday, which is considered a moderate website. 
+This article is from (link: "USA Today")[(goto-url: 'https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/'), which is considered a moderate website. 
 
 The Reason why the article is Centered is due to the focus on the facts. They only stated what was known at the time, and Russini's resignation letter. The exerpt was to show that point.
 
-https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/
 
 
-:: Left Leaning {"position":"400,500","size":"100,100"}
+[[Go back and choose another category|Choose]]
 
+
+:: Left Leaning {"position":"400,600","size":"100,100"}
+Incorrect!!! This news source was from (link: "Fox News")[(goto-url: 'https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight')] which is considered a right leaning news source. 
+
+The article talks about businesses which is not something left leaning news sources focus on typically.
+
+
+[[Go back and choose another category|Choose]]
 
 
 :: RIGHT {"position":"1000,700","size":"100,100"}
 Incorrect! The Correct Answer is is Centered.
 
-This article is from USAToday, which is considered a moderate website. 
+This article is from (link: "USA Today")[(goto-url: 'https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/'), which is considered a moderate website. 
 
 The Reason why the article is Centered is due to the focus on the facts. They only stated what was known at the time, and Russini's resignation letter. The exerpt was to show that point.
 
-https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/
 
 
-:: Right Leaning {"position":"600,600","size":"100,100"}
-Yes the news source this article was from is from Fox news which is a right leaning news souirce. 
+[[Go back and choose another category|Choose]]
+
+
+:: Right Leaning {"position":"600,700","size":"100,100"}
+Yes the news source this article was from is from(link: "Fox News")[(goto-url: 'https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight')]  which is a right leaning news souirce. 
 
 You can Identify that this is right leaning because of very specific sentences in the article.
 
@@ -87,25 +113,30 @@ You can Identify that this is right leaning because of very specific sentences i
 
 "The billionaires are also vying for the opportunity to carry Artemis IV astronauts during the first planned moon landing of the program in 2028."//
 
-Right leaning news typically focuses on the business aspect of and event. While left leaning and center news don't focus on that typically.
+Right leaning news typically focuses on the business aspect of an event and how this event will impact them. While left leaning and center news don't focus on that typically.
 
-[[Choose]]
+[[Go back and choose another category|Choose]]
 
-(set: $points to $points+)
+(set: $points to it +1)
 
 
 
 :: Science {"position":"600,400","size":"100,100"}
-NASA's Artemis follow-up mission 'right around the corner' after successful lunar flight
+This is the Article:
 
+//NASA's Artemis follow-up mission 'right around the corner' after successful lunar flight//
 
-"The world may still be captivated by the breathtaking views, record-setting distance and emotional homecoming of Artemis II, but for NASA, the next chapter is already in motion."
+Exerts From the article:
+
+//"The world may still be captivated by the breathtaking views, record-setting distance and emotional homecoming of Artemis II, but for NASA, the next chapter is already in motion."
 
 
 "Elon Musk’s Starship and Jeff Bezos’ Blue Moon landers are both competing to prove their company’s lander will be ready first."
 
 The billionaires are also vying for the opportunity to carry Artemis IV astronauts during the first planned moon landing of the program in 2028."
+//
 
+Which political perspective does thins article fit into???
 
 [[Right Leaning]]
 
@@ -132,12 +163,37 @@ Exert from Article:
 
 
 :: center {"position":"1300,600","size":"100,100"}
+Correct! This information is from the (link: "Firstpost")[(goto-url: 'https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html') article
+
+It mainly lays out what happened—Allbirds shifting toward AI, the stock surge, and the broader market reaction—without using emotional or opinionated language. Because it sticks to facts and context instead of pushing a positive or negative judgment, it avoids leaning in either political direction.
 
 
+[[Go back and choose another category|Choose]]
 
-:: left Leaning {"position":"1200,600","size":"100,100"}
+(set: $points to it +1)
 
 
+:: left Leaning {"position":"1200,700","size":"100,100"}
+Incorrect! The Correct Answer is is Centered.
 
-:: right Leaning {"position":"1400,500","size":"100,100"}
+This information is from the (link: "Firstpost")[(goto-url: 'https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html') article
 
+Left-leaning coverage often critiques corporations, focusing on issues like corporate irresponsibility, worker impact, or broader economic inequality. This article avoids that framing.
+
+It doesn’t criticize the company on ethical or social grounds or frame the pivot as harmful—it sticks to explaining what happened and how markets reacted. There’s no ideological critique of capitalism or corporate behavior, which keeps it from leaning left.
+
+
+[[Go back and choose another category|Choose]]
+
+
+:: right Leaning {"position":"1400,600","size":"100,100"}
+Incorrect! The Correct Answer is is Centered.
+
+This information is from the (link: "Firstpost")[(goto-url: 'https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html') article
+
+Right-leaning business coverage often emphasizes free-market success stories or presents corporate moves in a strongly positive light. This article doesn’t do that—it doesn’t celebrate the AI pivot uncritically.
+
+Instead, it points out uncertainty, hype, and risks around the company’s shift and stock surge. By including skepticism rather than just praising innovation or market gains, it avoids a pro-business, cheerleading tone.
+
+
+[[Go back and choose another category|Choose]]
