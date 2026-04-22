@@ -10,6 +10,7 @@
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Quiz Show.</tw-noscript></noscript></tw-story>
 <tw-storydata name="Quiz Show" startnode="1" creator="Twine" creator-version="2.12.0" format="Harlowe" format-version="3.3.9" ifid="6CE6D0D4-9067-4347-9CED-8199A466C549" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Game Start" tags="" position="900,100" size="100,100">&#39;&#39;WELCOME TO THE GAME SHOW LADIES AN GENTLEMEN!!! &#39;&#39;
+
 You will have 3 different news articles.. Your job is to guess which news source is left leaning, right leaning or center.
 
 EACH POINT YOU GET RIGHT YOU WILL BE AWARED ONE POINT. GOOD LUCK!!!!!
@@ -42,7 +43,7 @@ Which political perspective does thins article fit into???
 
 [[Center]]
 
-(Set: $ScienceVisible to False)</tw-passagedata><tw-passagedata pid="3" name="Right Leaning" tags="" position="600,700" size="100,100">Yes the news source this article was from is from(link: &quot;Fox News&quot;)[(goto-url: &#39;https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight&#39;)]  which is a right leaning news souirce. 
+(Set: $ScienceVisible to False)</tw-passagedata><tw-passagedata pid="3" name="Right Leaning" tags="" position="625,600" size="100,100">Correct! the news source this article was from is from(link: &quot;Fox News&quot;)[(goto-url: &#39;https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight&#39;)]  which is a right leaning news souirce. 
 
 You can Identify that this is right leaning because of very specific sentences in the article.
 
@@ -55,12 +56,12 @@ Right leaning news typically focuses on the business aspect of an event and how 
 [[Go back and choose another category|Choose]]
 
 (set: $points to it +1)
-</tw-passagedata><tw-passagedata pid="4" name="Left Leaning" tags="" position="400,600" size="100,100">Incorrect!!! This news source was from (link: &quot;Fox News&quot;)[(goto-url: &#39;https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight&#39;)] which is considered a right leaning news source. 
+</tw-passagedata><tw-passagedata pid="4" name="Left Leaning" tags="" position="350,600" size="100,100">Incorrect! This news source was from (link: &quot;Fox News&quot;)[(goto-url: &#39;https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight&#39;)] which is considered a right leaning news source. 
 
 The article talks about businesses which is not something left leaning news sources focus on typically.
 
 
-[[Go back and choose another category|Choose]]</tw-passagedata><tw-passagedata pid="5" name="Center" tags="" position="500,600" size="100,100">Incorrect. This article is from (link: &quot;Fox News&quot;)[(goto-url: &#39;https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight&#39;)] which is considered more right leaning. Centered news sources focuses on just the facts and has more details about the people involded in the event. They add no opinions or bias that could fit with the specific political perspective.
+[[Go back and choose another category|Choose]]</tw-passagedata><tw-passagedata pid="5" name="Center" tags="" position="500,600" size="100,100">Incorrect! This article is from (link: &quot;Fox News&quot;)[(goto-url: &#39;https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight&#39;)] which is considered more right leaning. Centered news sources focuses on just the facts and has more details about the people involded in the event. They add no opinions or bias that could fit with the specific political perspective.
 
 This acticle though focuses on how this would impact businesses like Space X. Which may be true that theres to much speculation that makes it not very centered;.
 
@@ -83,29 +84,29 @@ Please choose one of the available Catagories:
 [[Let&#39;s see how well you did| Results]]
 }</tw-passagedata><tw-passagedata pid="7" name="Sports" tags="" position="900,500" size="100,100">This is the article: 
 
-&quot;Dianna Russini resigns from The Athletic with defiant letter after Mike Vrabel photos&quot;
+//&quot;Dianna Russini resigns from The Athletic with defiant letter after Mike Vrabel photos&quot;//
 
 Exert from Article: 
 
-&quot;The New York Times, which owns The Athletic, confirmed Saturday that Russini&#39;s conduct was being investigated, saying, &quot;The Athletic’s editorial guidelines require that their journalists avoid any activities that pose a conflict of interest or the appearance of a conflict, so as not to call into question their credibility.&quot;&quot;
-
+//&quot;The New York Times, which owns The Athletic, confirmed Saturday that Russini&#39;s conduct was being investigated, saying, &quot;The Athletic’s editorial guidelines require that their journalists avoid any activities that pose a conflict of interest or the appearance of a conflict, so as not to call into question their credibility.&quot;&quot;
+//
 [[LEFT Leaning-&gt;LEFT]]
 [[CENTER Leaning-&gt;CENTER]]
 [[RIGHT Leaning-&gt;RIGHT]]
 
 (Set: $SportsVisible to False)</tw-passagedata><tw-passagedata pid="8" name="Economics" tags="" position="1200,400" size="100,100">&#39;&#39;Here is a quick blurb from an article:&#39;&#39;
-How a shoe brand’s decision to ditch sneakers and become an AI firm saw stocks surging 500%
+//How a shoe brand’s decision to ditch sneakers and become an AI firm saw stocks surging 500%
 
 &#39;The company’s transformation centres on entering the rapidly expanding AI infrastructure market. It has secured a $50 million convertible financing arrangement with an institutional investor, with funds earmarked for acquiring graphics processing units (GPUs) — critical hardware used in training and deploying AI models.&quot;
 
-&quot;The pivot follows a broader restructuring effort. Allbirds recently agreed to sell its brand, intellectual property, and footwear assets to American Exchange Group for approximately $39 million.&quot;
+&quot;The pivot follows a broader restructuring effort. Allbirds recently agreed to sell its brand, intellectual property, and footwear assets to American Exchange Group for approximately $39 million.&quot;//
 
 &#39;&#39;This article is&#39;&#39;
 [[left Leaning]]
 [[right Leaning]]
 [[center]]
 
-(Set: $EconomicsVisible to False)</tw-passagedata><tw-passagedata pid="9" name="LEFT" tags="" position="800,700" size="100,100">Incorrect! The Correct Answer is is Centered.
+(Set: $EconomicsVisible to False)</tw-passagedata><tw-passagedata pid="9" name="LEFT" tags="" position="775,700" size="100,100">Incorrect! The Correct Answer is is Centered.
 
 This article is from (link: &quot;USA Today&quot;)[(goto-url: &#39;https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/&#39;), which is considered a moderate website. 
 
@@ -120,7 +121,7 @@ The Reason why the article is Centered is due to the focus on the facts. They on
 
 [[Go back and choose another category|Choose]]
 
-(set: $points to it +1)</tw-passagedata><tw-passagedata pid="11" name="RIGHT" tags="" position="1000,700" size="100,100">Incorrect! The Correct Answer is is Centered.
+(set: $points to it +1)</tw-passagedata><tw-passagedata pid="11" name="RIGHT" tags="" position="1050,700" size="100,100">Incorrect! The Correct Answer is is Centered.
 
 This article is from (link: &quot;USA Today&quot;)[(goto-url: &#39;https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/&#39;), which is considered a moderate website. 
 
@@ -128,7 +129,7 @@ The Reason why the article is Centered is due to the focus on the facts. They on
 
 
 
-[[Go back and choose another category|Choose]]</tw-passagedata><tw-passagedata pid="12" name="left Leaning" tags="" position="1200,700" size="100,100">Incorrect! The Correct Answer is is Centered.
+[[Go back and choose another category|Choose]]</tw-passagedata><tw-passagedata pid="12" name="left Leaning" tags="" position="1200,600" size="100,100">Incorrect! The Correct Answer is is Centered.
 
 This information is from the (link: &quot;Firstpost&quot;)[(goto-url: &#39;https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html&#39;)] article
 
@@ -137,7 +138,7 @@ Left-leaning coverage often critiques corporations, focusing on issues like corp
 It doesn’t criticize the company on ethical or social grounds or frame the pivot as harmful—it sticks to explaining what happened and how markets reacted. There’s no ideological critique of capitalism or corporate behavior, which keeps it from leaning left.
 
 
-[[Go back and choose another category|Choose]]</tw-passagedata><tw-passagedata pid="13" name="right Leaning" tags="" position="1400,600" size="100,100">Incorrect! The Correct Answer is is Centered.
+[[Go back and choose another category|Choose]]</tw-passagedata><tw-passagedata pid="13" name="right Leaning" tags="" position="1450,600" size="100,100">Incorrect! The Correct Answer is is Centered.
 
 This information is from the (link: &quot;Firstpost&quot;)[(goto-url: &#39;https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html&#39;)] article
 
@@ -146,14 +147,14 @@ Right-leaning business coverage often emphasizes free-market success stories or 
 Instead, it points out uncertainty, hype, and risks around the company’s shift and stock surge. By including skepticism rather than just praising innovation or market gains, it avoids a pro-business, cheerleading tone.
 
 
-[[Go back and choose another category|Choose]]</tw-passagedata><tw-passagedata pid="14" name="center" tags="" position="1300,600" size="100,100">Correct! This information is from the (link: &quot;Firstpost&quot;)[(goto-url: &#39;https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html&#39;)] article
+[[Go back and choose another category|Choose]]</tw-passagedata><tw-passagedata pid="14" name="center" tags="" position="1325,600" size="100,100">Correct! This information is from the (link: &quot;Firstpost&quot;)[(goto-url: &#39;https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html&#39;)] article
 
 It mainly lays out what happened—Allbirds shifting toward AI, the stock surge, and the broader market reaction—without using emotional or opinionated language. Because it sticks to facts and context instead of pushing a positive or negative judgment, it avoids leaning in either political direction.
 
 
 [[Go back and choose another category|Choose]]
 
-(set: $points to it +1)</tw-passagedata><tw-passagedata pid="15" name=" Results" tags="" position="900,900" size="100,100">You got $points out of 3 Correct!!!!
+(set: $points to it +1)</tw-passagedata><tw-passagedata pid="15" name=" Results" tags="" position="950,925" size="100,100">You got $points out of 3 Correct!!!!
 
 [[Want to try again-&gt;Game Start]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
