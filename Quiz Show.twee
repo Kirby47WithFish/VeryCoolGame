@@ -15,6 +15,8 @@ Quiz Show
 :: \ Results {"position":"900,900","size":"100,100"}
 You got $points out of 3 Correct!!!!
 
+[[Want to try again->Game Start]]
+
 
 :: CENTER {"position":"900,700","size":"100,100"}
 Correct! This article is from (link: "USA Today")[(goto-url: 'https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/')], which is considered a moderate website. 
@@ -39,11 +41,21 @@ This acticle though focuses on how this would impact businesses like Space X. Wh
 
 Please choose one of the available Catagories: 
 
-[[Science]]
-[[Sports]]
-[[Economics]]
+{
+(if: $ScienceVisible)[
+[[Science->Science]]<br/>
+]
+
+(if: $SportsVisible)[
+[[Sports->Sports]]<br/>
+]
+
+(if: $EconomicsVisible)[
+[[Economics->Economics]]<br/>
+]
 
 [[Let's see how well you did| Results]]
+}
 
 
 :: Economics {"position":"1200,400","size":"100,100"}
@@ -59,6 +71,8 @@ How a shoe brand’s decision to ditch sneakers and become an AI firm saw stocks
 [[right Leaning]]
 [[center]]
 
+(Set: $EconomicsVisible to False)
+
 
 :: Game Start {"position":"900,100","size":"100,100"}
 ''WELCOME TO THE GAME SHOW LADIES AN GENTLEMEN!!! ''
@@ -67,6 +81,10 @@ You will have 3 different news articles.. Your job is to guess which news source
 EACH POINT YOU GET RIGHT YOU WILL BE AWARED ONE POINT. GOOD LUCK!!!!!
 
 [[Click to continue and pick a category|Choose]]
+
+(Set: $ScienceVisible to true)
+(Set: $SportsVisible to true)
+(Set: $EconomicsVisible to true)
 
 (set: $points to 0)
 
@@ -144,7 +162,7 @@ Which political perspective does thins article fit into???
 
 [[Center]]
 
-
+(Set: $ScienceVisibile to False)
 
 
 :: Sports {"position":"900,500","size":"100,100"}
@@ -160,10 +178,11 @@ Exert from Article:
 [[CENTER Leaning->CENTER]]
 [[RIGHT Leaning->RIGHT]]
 
+(Set: $SportsVisible to False)
 
 
 :: center {"position":"1300,600","size":"100,100"}
-Correct! This information is from the (link: "Firstpost")[(goto-url: 'https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html') article
+Correct! This information is from the (link: "Firstpost")[(goto-url: 'https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html')] article
 
 It mainly lays out what happened—Allbirds shifting toward AI, the stock surge, and the broader market reaction—without using emotional or opinionated language. Because it sticks to facts and context instead of pushing a positive or negative judgment, it avoids leaning in either political direction.
 
@@ -176,7 +195,7 @@ It mainly lays out what happened—Allbirds shifting toward AI, the stock surge,
 :: left Leaning {"position":"1200,700","size":"100,100"}
 Incorrect! The Correct Answer is is Centered.
 
-This information is from the (link: "Firstpost")[(goto-url: 'https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html') article
+This information is from the (link: "Firstpost")[(goto-url: 'https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html')] article
 
 Left-leaning coverage often critiques corporations, focusing on issues like corporate irresponsibility, worker impact, or broader economic inequality. This article avoids that framing.
 
@@ -189,7 +208,7 @@ It doesn’t criticize the company on ethical or social grounds or frame the piv
 :: right Leaning {"position":"1400,600","size":"100,100"}
 Incorrect! The Correct Answer is is Centered.
 
-This information is from the (link: "Firstpost")[(goto-url: 'https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html') article
+This information is from the (link: "Firstpost")[(goto-url: 'https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html')] article
 
 Right-leaning business coverage often emphasizes free-market success stories or presents corporate moves in a strongly positive light. This article doesn’t do that—it doesn’t celebrate the AI pivot uncritically.
 
