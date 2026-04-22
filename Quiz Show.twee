@@ -12,7 +12,7 @@ Quiz Show
 }
 
 
-:: \ Results {"position":"900,900","size":"100,100"}
+:: \ Results {"position":"950,925","size":"100,100"}
 You got $points out of 3 Correct!!!!
 
 [[Want to try again->Game Start]]
@@ -30,7 +30,7 @@ The Reason why the article is Centered is due to the focus on the facts. They on
 
 
 :: Center {"position":"500,600","size":"100,100"}
-Incorrect. This article is from (link: "Fox News")[(goto-url: 'https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight')] which is considered more right leaning. Centered news sources focuses on just the facts and has more details about the people involded in the event. They add no opinions or bias that could fit with the specific political perspective.
+Incorrect! This article is from (link: "Fox News")[(goto-url: 'https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight')] which is considered more right leaning. Centered news sources focuses on just the facts and has more details about the people involded in the event. They add no opinions or bias that could fit with the specific political perspective.
 
 This acticle though focuses on how this would impact businesses like Space X. Which may be true that theres to much speculation that makes it not very centered;.
 
@@ -42,57 +42,64 @@ This acticle though focuses on how this would impact businesses like Space X. Wh
 Please choose one of the available Catagories: 
 
 {
-(if: $ScienceVisible)[
-[[Science->Science]]<br/>
+(if: $scienceVisible)[
+[[Science]]<br/>
 ]
 
-(if: $SportsVisible)[
-[[Sports->Sports]]<br/>
+(if: $sportsVisible)[
+[[Sports]]<br/>
 ]
 
-(if: $EconomicsVisible)[
-[[Economics->Economics]]<br/>
+(if: $economicsVisible)[
+[[Economics]]<br/>
 ]
 
-[[Let's see how well you did| Results]]
+(if: $scienceVisible is false)[
+  (if: $sportsVisible is false)[
+    (if: $economicsVisible is false)[
+        [[Let's see how well you did| Results]]
+     ]  
+    ]
+ ]
 }
 
 
 :: Economics {"position":"1200,400","size":"100,100"}
 ''Here is a quick blurb from an article:''
-How a shoe brand’s decision to ditch sneakers and become an AI firm saw stocks surging 500%
+//How a shoe brand’s decision to ditch sneakers and become an AI firm saw stocks surging 500%
 
 'The company’s transformation centres on entering the rapidly expanding AI infrastructure market. It has secured a $50 million convertible financing arrangement with an institutional investor, with funds earmarked for acquiring graphics processing units (GPUs) — critical hardware used in training and deploying AI models."
 
-"The pivot follows a broader restructuring effort. Allbirds recently agreed to sell its brand, intellectual property, and footwear assets to American Exchange Group for approximately $39 million."
+"The pivot follows a broader restructuring effort. Allbirds recently agreed to sell its brand, intellectual property, and footwear assets to American Exchange Group for approximately $39 million."//
 
 ''This article is''
 [[left Leaning]]
 [[right Leaning]]
 [[center]]
 
-(Set: $EconomicsVisible to False)
+(Set: $economicsVisible to False)
 
 
 :: Game Start {"position":"900,100","size":"100,100"}
 ''WELCOME TO THE GAME SHOW LADIES AN GENTLEMEN!!! ''
+
 You will have 3 different news articles.. Your job is to guess which news source is left leaning, right leaning or center.
 
 EACH POINT YOU GET RIGHT YOU WILL BE AWARED ONE POINT. GOOD LUCK!!!!!
 
 [[Click to continue and pick a category|Choose]]
 
-(Set: $ScienceVisible to true)
-(Set: $SportsVisible to true)
-(Set: $EconomicsVisible to true)
+(Set: $scienceVisible to true)
+(Set: $sportsVisible to true)
+(Set: $economicsVisible to true)
 
 (set: $points to 0)
 
 
-:: LEFT {"position":"800,700","size":"100,100"}
+:: LEFT {"position":"775,700","size":"100,100"}
 Incorrect! The Correct Answer is is Centered.
 
-This article is from (link: "USA Today")[(goto-url: 'https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/'), which is considered a moderate website. 
+This article is from (link: "USA Today")[(goto-url: 'https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/')], which is considered a moderate website. 
 
 The Reason why the article is Centered is due to the focus on the facts. They only stated what was known at the time, and Russini's resignation letter. The exerpt was to show that point.
 
@@ -101,8 +108,8 @@ The Reason why the article is Centered is due to the focus on the facts. They on
 [[Go back and choose another category|Choose]]
 
 
-:: Left Leaning {"position":"400,600","size":"100,100"}
-Incorrect!!! This news source was from (link: "Fox News")[(goto-url: 'https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight')] which is considered a right leaning news source. 
+:: Left Leaning {"position":"350,600","size":"100,100"}
+Incorrect! This news source was from (link: "Fox News")[(goto-url: 'https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight')] which is considered a right leaning news source. 
 
 The article talks about businesses which is not something left leaning news sources focus on typically.
 
@@ -110,10 +117,10 @@ The article talks about businesses which is not something left leaning news sour
 [[Go back and choose another category|Choose]]
 
 
-:: RIGHT {"position":"1000,700","size":"100,100"}
+:: RIGHT {"position":"1050,700","size":"100,100"}
 Incorrect! The Correct Answer is is Centered.
 
-This article is from (link: "USA Today")[(goto-url: 'https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/'), which is considered a moderate website. 
+This article is from (link: "USA Today")[(goto-url: 'https://www.usatoday.com/story/sports/nfl/2026/04/14/dianna-russini-resigns-the-athletic-mike-vrabel-photos-patriots/89611491007/')], which is considered a moderate website. 
 
 The Reason why the article is Centered is due to the focus on the facts. They only stated what was known at the time, and Russini's resignation letter. The exerpt was to show that point.
 
@@ -122,8 +129,8 @@ The Reason why the article is Centered is due to the focus on the facts. They on
 [[Go back and choose another category|Choose]]
 
 
-:: Right Leaning {"position":"600,700","size":"100,100"}
-Yes the news source this article was from is from(link: "Fox News")[(goto-url: 'https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight')]  which is a right leaning news souirce. 
+:: Right Leaning {"position":"625,600","size":"100,100"}
+Correct! the news source this article was from is from(link: "Fox News")[(goto-url: 'https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight')]  which is a right leaning news souirce. 
 
 You can Identify that this is right leaning because of very specific sentences in the article.
 
@@ -162,26 +169,26 @@ Which political perspective does thins article fit into???
 
 [[Center]]
 
-(Set: $ScienceVisible to False)
+(Set: $scienceVisible to False)
 
 
 :: Sports {"position":"900,500","size":"100,100"}
 This is the article: 
 
-"Dianna Russini resigns from The Athletic with defiant letter after Mike Vrabel photos"
+//"Dianna Russini resigns from The Athletic with defiant letter after Mike Vrabel photos"//
 
 Exert from Article: 
 
-"The New York Times, which owns The Athletic, confirmed Saturday that Russini's conduct was being investigated, saying, "The Athletic’s editorial guidelines require that their journalists avoid any activities that pose a conflict of interest or the appearance of a conflict, so as not to call into question their credibility.""
-
+//"The New York Times, which owns The Athletic, confirmed Saturday that Russini's conduct was being investigated, saying, "The Athletic’s editorial guidelines require that their journalists avoid any activities that pose a conflict of interest or the appearance of a conflict, so as not to call into question their credibility.""
+//
 [[LEFT Leaning->LEFT]]
 [[CENTER Leaning->CENTER]]
 [[RIGHT Leaning->RIGHT]]
 
-(Set: $SportsVisible to False)
+(Set: $sportsVisible to False)
 
 
-:: center {"position":"1300,600","size":"100,100"}
+:: center {"position":"1325,600","size":"100,100"}
 Correct! This information is from the (link: "Firstpost")[(goto-url: 'https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html')] article
 
 It mainly lays out what happened—Allbirds shifting toward AI, the stock surge, and the broader market reaction—without using emotional or opinionated language. Because it sticks to facts and context instead of pushing a positive or negative judgment, it avoids leaning in either political direction.
@@ -192,7 +199,7 @@ It mainly lays out what happened—Allbirds shifting toward AI, the stock surge,
 (set: $points to it +1)
 
 
-:: left Leaning {"position":"1200,700","size":"100,100"}
+:: left Leaning {"position":"1200,600","size":"100,100"}
 Incorrect! The Correct Answer is is Centered.
 
 This information is from the (link: "Firstpost")[(goto-url: 'https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html')] article
@@ -205,7 +212,7 @@ It doesn’t criticize the company on ethical or social grounds or frame the piv
 [[Go back and choose another category|Choose]]
 
 
-:: right Leaning {"position":"1400,600","size":"100,100"}
+:: right Leaning {"position":"1450,600","size":"100,100"}
 Incorrect! The Correct Answer is is Centered.
 
 This information is from the (link: "Firstpost")[(goto-url: 'https://www.firstpost.com/explainers/allbirds-ai-pivot-stock-surge-newbird-ai-explained-14001204.html')] article
