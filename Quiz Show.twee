@@ -12,9 +12,21 @@ Quiz Show
 }
 
 
-:: \ Results {"position":"950,925","size":"100,100"}
+:: \ Results {"position":"900,975","size":"100,100"}
 You got $points out of 3 Correct!!!!
 
+(if: $points < 0) [
+You didn't do very good... How did you get negative points
+]
+(else-if:$points is 0) [
+You didn't do very good...
+]
+(else-if:$points <=2) [
+Not bad!!!! Hopefully next time you can get all of them!!!
+]
+(else:) [
+YOU GOT  100 PERCENT CORRECT GOOD JOB!!!!
+]
 [[Want to try again->Game Start]]
 
 
@@ -36,10 +48,12 @@ This acticle though focuses on how this would impact businesses like Space X. Wh
 
 [[Go back and choose another category|Choose]]
 
+(set: $points to it -1)
+
 
 :: Choose {"position":"900,300","size":"100,100"}
 
-Please choose one of the available Catagories: 
+''Please choose one of the available Catagories:'' 
 
 {
 (if: $scienceVisible)[
@@ -72,10 +86,10 @@ Please choose one of the available Catagories:
 
 "The pivot follows a broader restructuring effort. Allbirds recently agreed to sell its brand, intellectual property, and footwear assets to American Exchange Group for approximately $39 million."//
 
-''This article is''
-[[left Leaning]]
-[[right Leaning]]
-[[center]]
+''This article is: ''
+[[LEFT|left Leaning]]
+[[CENTER|center]]
+[[RIGHT|right Leaning]]
 
 (Set: $economicsVisible to False)
 
@@ -83,9 +97,11 @@ Please choose one of the available Catagories:
 :: Game Start {"position":"900,100","size":"100,100"}
 ''WELCOME TO THE GAME SHOW LADIES AN GENTLEMEN!!! ''
 
-You will have 3 different news articles.. Your job is to guess which news source is left leaning, right leaning or center.
+You will have 3 different news articles. Your job is to guess which news source is left leaning, right leaning or center.
 
 EACH POINT YOU GET RIGHT YOU WILL BE AWARED ONE POINT. GOOD LUCK!!!!!
+
+THOUGH IF YOU GET A QUESTION WRONG THEN YOU WILL LOSE A POINT, SO ANSWER CAREFULLY.
 
 [[Click to continue and pick a category|Choose]]
 
@@ -107,6 +123,8 @@ The Reason why the article is Centered is due to the focus on the facts. They on
 
 [[Go back and choose another category|Choose]]
 
+(set: $points to it -1)
+
 
 :: Left Leaning {"position":"350,600","size":"100,100"}
 Incorrect! This news source was from (link: "Fox News")[(goto-url: 'https://www.foxnews.com/science/nasas-artemis-follow-mission-right-around-corner-successful-lunar-flight')] which is considered a right leaning news source. 
@@ -115,6 +133,8 @@ The article talks about businesses which is not something left leaning news sour
 
 
 [[Go back and choose another category|Choose]]
+
+(set: $points to it -1)
 
 
 :: RIGHT {"position":"1050,700","size":"100,100"}
@@ -127,6 +147,8 @@ The Reason why the article is Centered is due to the focus on the facts. They on
 
 
 [[Go back and choose another category|Choose]]
+
+(set: $points to it -1)
 
 
 :: Right Leaning {"position":"625,600","size":"100,100"}
@@ -161,13 +183,14 @@ Exerts From the article:
 The billionaires are also vying for the opportunity to carry Artemis IV astronauts during the first planned moon landing of the program in 2028."
 //
 
-Which political perspective does thins article fit into???
 
-[[Right Leaning]]
+''This Article is: ''
+[[LEFT|Left Leaning]]
 
-[[Left Leaning]]
+[[CENTER|Center]]
 
-[[Center]]
+[[RIGHT|Right Leaning]]
+
 
 (Set: $scienceVisible to False)
 
@@ -181,9 +204,11 @@ Exert from Article:
 
 //"The New York Times, which owns The Athletic, confirmed Saturday that Russini's conduct was being investigated, saying, "The Athletic’s editorial guidelines require that their journalists avoid any activities that pose a conflict of interest or the appearance of a conflict, so as not to call into question their credibility.""
 //
-[[LEFT Leaning->LEFT]]
-[[CENTER Leaning->CENTER]]
-[[RIGHT Leaning->RIGHT]]
+
+''This Article is: ''
+[[LEFT]]
+[[CENTER]]
+[[RIGHT]]
 
 (Set: $sportsVisible to False)
 
@@ -211,6 +236,8 @@ It doesn’t criticize the company on ethical or social grounds or frame the piv
 
 [[Go back and choose another category|Choose]]
 
+(set: $points to it -1)
+
 
 :: right Leaning {"position":"1450,600","size":"100,100"}
 Incorrect! The Correct Answer is is Centered.
@@ -223,3 +250,5 @@ Instead, it points out uncertainty, hype, and risks around the company’s shift
 
 
 [[Go back and choose another category|Choose]]
+
+(set: $points to it -1)
